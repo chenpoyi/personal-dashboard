@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 const path = require('path');
 const dotenv = require('dotenv');
+// const cors = require('cors');
 
 dotenv.config();
 
@@ -43,7 +44,7 @@ const newUser = new User(data);
 //     console.log('User has been saved!');
 //   }
 // })
-
+// app.use(cors());
 //HTTP request logger
 app.use(morgan('tiny'));
 
